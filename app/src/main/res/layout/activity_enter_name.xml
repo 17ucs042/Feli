@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feli_background"
+    tools:context=".EnterName">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/feli_dog"
+        android:layout_above="@id/excited"/>
+
+    <TextView
+        android:id="@+id/excited"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60dp"
+        android:text="@string/excited"
+        android:gravity="center"
+        android:textColor="#230051"
+        android:textSize="30sp"
+        android:layout_above="@id/introduce"/>
+
+    <TextView
+        android:id="@+id/introduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/name"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="Introductions are on the way?"
+        android:textColor="#A1A1A1"
+        android:textSize="18sp"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="What's your good name?"
+        android:layout_centerHorizontal="true"
+        android:textColorHint="#230051"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:backgroundTint="#235001"
+        android:textCursorDrawable="@drawable/cursor_color"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/feli_button"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+    <ImageView
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_navigate"
+        android:layout_below="@id/next"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Already met Feli? Login!"
+        android:textColor="#230051"
+        android:textSize="18sp" />
+
+</RelativeLayout>

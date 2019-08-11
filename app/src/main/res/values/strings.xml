@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Feli</string>
+    <string name="intro">Your good friend to be\nand your personal assistant too!</string>
+    <string name="excited">I am so excited to\nknow you!</string>
+    <string name="title_activity_sign_up">SignUp</string>
+    <string name="how_you_feel">How do you feel at the moment? I will\ntry to find perfect remedies for you!</string>
+</resources>

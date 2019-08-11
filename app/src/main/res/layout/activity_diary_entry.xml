@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiaryEntry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/entry_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/write_diary_image_2"
+        android:adjustViewBounds="true"/>
+
+    <ImageView
+        android:id="@+id/go_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back_navigate"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/diary_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="WRITE A DIARY ENTRY"
+        android:textColor="#230051"
+        android:layout_below="@id/entry_image"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="40dp"/>
+
+    <EditText
+        android:id="@+id/enter_diary_text"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/diary_text"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/diary_background"
+        android:textColor="#000"
+        android:gravity="top"
+        android:textCursorDrawable="@drawable/cursor_color"
+        android:paddingStart="5dp"
+        android:paddingTop="10dp"/>
+
+    <Button
+        android:id="@+id/begin"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/enter_diary_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/feli_button"
+        android:text="Done!"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/last_entries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/begin"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:text="Your last diary entries"
+        android:textColor="#230051"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/man_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/last_entries"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:text="Man! You write way too much! It's great"
+        android:textColor="#ad40ff"
+        android:textSize="14sp"
+        android:layout_marginBottom="40dp"/>
+
+    </RelativeLayout>
+</ScrollView>

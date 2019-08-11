@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Dashboard">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/feli_background_2" />
+
+        <TextView
+            android:id="@+id/hey_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="50dp"
+            android:text="Hey"
+            android:textColor="#230051"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/dash_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hey_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/dashboard_line" />
+
+        <TextView
+            android:id="@+id/mood_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dash_view"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="mood"
+            android:textColor="#230051"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/let_do_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mood_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Let's do something together"
+            android:textColor="#ad40ff"
+            android:textSize="14sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/let_do_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ripple_effect_1">
+
+                    <ImageView
+                        android:id="@+id/walk_image"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/let_do_image_2" />
+
+                    <TextView
+                        android:id="@+id/go_walk"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/walk_image"
+                        android:layout_marginTop="20dp"
+                        android:text="GO FOR A WALK"
+                        android:textSize="12sp"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:id="@+id/walk_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/walk_image"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/go_walk"
+                        android:text="10 MIN."
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:background="@drawable/ripple_effect_1">
+
+                    <ImageView
+                        android:id="@+id/yoga_image"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/let_do_image_1" />
+
+                    <TextView
+                        android:id="@+id/go_yoga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/yoga_image"
+                        android:layout_marginTop="20dp"
+                        android:text="MEDITATE"
+                        android:textSize="12sp"
+                        android:layout_marginStart="10dp"/>
+
+                    <TextView
+                        android:id="@+id/yoga_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/yoga_image"
+                        android:layout_marginStart="40dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@id/go_yoga"
+                        android:text="10 MIN."
+                        android:textSize="12sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/jot_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_scroll_view"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Jot down your thoughts"
+            android:textColor="#230051"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/write_diary_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/jot_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Let's do something together"
+            android:textColor="#ad40ff"
+            android:textSize="14sp" />
+        
+        <ImageView
+            android:id="@+id/write_diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/write_diary_image"
+            android:layout_below="@id/write_diary_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/stats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/write_diary"
+            android:src="@drawable/stats_image"
+            android:layout_below="@id/write_diary_text"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"/>
+
+        <TextView
+            android:id="@+id/music_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/write_diary"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Music is healing"
+            android:textColor="#230051"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/playlist_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/music_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Find our currated playlists on youtube or spotify"
+            android:textColor="#ad40ff"
+            android:textSize="14sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontal_scroll_view_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/playlist_text"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="40dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/happy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/music_image_1" />
+
+                <Button
+                    android:id="@+id/sad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/music_image_2"
+                    android:layout_marginStart="20dp"/>
+
+                <Button
+                    android:id="@+id/depressed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/music_image_3"
+                    android:layout_marginStart="20dp"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/want_to_talk_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/horizontal_scroll_view_2"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:text="Do you want to talk to someone?"
+            android:textColor="#230051"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/talk_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/want_to_talk_text"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="10dp"
+            android:text="Feli would surely help you! You can even talk to our experts"
+            android:textColor="#ad40ff"
+            android:textSize="14sp"
+            android:layout_marginBottom="40dp"/>
+    </RelativeLayout>
+
+</ScrollView>

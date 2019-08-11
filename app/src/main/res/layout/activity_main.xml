@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreen"
+    android:background="@drawable/feli_background">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/feli_dog_big"
+        android:layout_above="@id/hi"
+        android:layout_marginBottom="66dp"/>
+
+    <TextView
+        android:id="@+id/hi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#230051"
+        android:text="Hi! I am Feli."
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginBottom="60dp"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hi"
+        android:text="@string/intro"
+        android:gravity="center"
+        android:textColor="#A1A1A1"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/hi_button"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/feli_button"
+        android:layout_below="@id/intro"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Hi Feli!"
+        android:textColor="#FFF"
+        android:textAllCaps="false"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Already met Feli? Login!"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#230051"
+        android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>
